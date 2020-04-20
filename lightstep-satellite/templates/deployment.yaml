@@ -65,6 +65,8 @@ spec:
               value: "8186"
             - name: COLLECTOR_SECURE_PORT
               value: "8187"
+            - name: COLLECTOR_RAINBOW_COMPRESSOR_NAME
+              value: "gzip"
 
             - name: COLLECTOR_REPORTER_BYTES_PER_PROJECT
               value: "{{ .Values.lightstep.collector.reporter.bytesPerProject | toString }}"
