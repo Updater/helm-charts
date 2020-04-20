@@ -12,7 +12,7 @@ using Custom Resources `IngressRoute`: <https://docs.traefik.io/providers/kubern
 
 To install Traefik, follow the example below:
 
-1. `helm repo add kirk https://raw.githubusercontent.com/krg7880/charts/master`
+1. `helm repo add kirk https://raw.githubusercontent.com/Updater/helm-charts/master`
 2. `helm repo update`
 
 Generate the k8s manifests
