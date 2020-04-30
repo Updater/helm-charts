@@ -98,6 +98,11 @@ dashboard:
       enabled: false
       # address: ''
 
+prometheus: 
+  enable: true
+  port: 8082
+  entryPoint: "metrics"
+
 logs:
   loglevel: WARN
 #

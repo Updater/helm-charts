@@ -71,6 +71,9 @@ spec:
           - "--api.insecure={{ .Values.dashboard.insecure }}"
           - "--ping=true"
           - "--providers.kubernetescrd"
+          - "--metrics.prometheus={{ .Values.prometheus.enable }}"
+          - "--entryPoints.metrics.address=:{{ .Values.prometheus.port }}"
+          - "--metrics.prometheus.entryPoint={{ .Values.prometheus.entryPoint }}"          
           - "--log.level={{ .Values.logs.loglevel }}"
           {{- with .Values.additionalArguments }}
           {{- range . }}
