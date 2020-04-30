@@ -1,4 +1,7 @@
-kind: ClusterRoleBinding
+## Use a RoleBinding that references the ClusterRole
+## So that Traefik can get cluster-wide permsissions but tied to
+## a specific namespace
+kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: {{ template "traefik.fullname" . }}
